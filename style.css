@@ -1,0 +1,46 @@
+/* body {
+  background-color: brown;
+  color: white;
+}
+p,
+h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.para1 {
+  background-color: aquamarine;
+} */
+/* 
+div + p {
+  background-color: aquamarine;
+} */
+div ~ p {
+  background-color: aquamarine;
+}
+p:hover {
+  background-color: cadetblue;
+  font-size: xx-large;
+}
+p::before {
+  content: "Hello ";
+}
+p::after {
+  content: " Have a nice day";
+  font-size: small;
+}
+p::selection {
+  background-color: chartreuse;
+  color: black;
+}
+p:nth-child(2) {
+  background-color: chocolate;
+}
+div p:nth-of-type(1) {
+  background-color: coral;
+}
