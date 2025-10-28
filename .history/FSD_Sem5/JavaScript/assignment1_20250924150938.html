@@ -1,0 +1,57 @@
+<!-- a counter app in a which has a logo on the top with counter app heading and give alert if counter is greater than 10 and less than 0  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+            width: 80px;
+            margin-top: 20px;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        button {
+            font-size: 2rem;
+            margin: 0 10px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Replace src with your logo image path if needed -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo" class="logo">
+    <h2>Counter App</h2>
+    <h1 id="count">0</h1>
+    <button onclick="decrement()">-</button>
+    <button onclick="increment()">+</button>
+    <script>
+        let count = 0;
+        const countEl = document.getElementById("count");
+
+        function increment() {
+            count++;
+            if (count > 10) {
+                alert("Maximum limit reached");
+                count = 10;
+            }
+            countEl.innerText = count;
+        }
+
+        function decrement() {
+            count--;
+            if (count < 0) {
+                alert("Minimum limit reached");
+                count = 0;
+            }
+            countEl.innerText = count;
+        }
+    </script>
+</body>
+</html>

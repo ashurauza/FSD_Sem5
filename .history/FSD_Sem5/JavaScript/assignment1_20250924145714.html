@@ -1,0 +1,29 @@
+<!-- a counter app which has a logo on the top with counter app heading -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter app</title>
+</head>
+<body>
+    <logol>Counter App</logo>
+    <h1 id="count">0</h1>
+    <button onclick="decrement()">-</button>
+    <button onclick="increment()">+</button>
+   <script>         
+    let count = 0;
+    let countEl = document.getElementById("count");
+    function increment(){
+        count++;
+        countEl.innerText = count;
+    }
+    function decrement(){
+        count--;
+        countEl.innerText = count;
+    }
+   </script>    
+    
+    
+</body>
+</html>
