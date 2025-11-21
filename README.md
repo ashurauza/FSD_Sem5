@@ -1,2 +1,2 @@
 # FSD_Sem5
-Welcome to FSD Session and fifth semester of B.Tech.
+Welcome to FSD Session and fifth semester of B.Tech. in CSE(AI&ML)
