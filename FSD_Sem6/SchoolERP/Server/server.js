@@ -14,7 +14,9 @@ const server=http.createServer((req, res) => {
     else if(url=="/contact" && req.method=="GET"){
         res.write("Contact Page");
         res.statusCode=201;
+
     }
+    else
     else if(url=="/services" && req.method=="POST"){
         res.write("Services Page");
         res.statusCode=201;
